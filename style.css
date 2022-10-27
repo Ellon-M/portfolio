@@ -115,3 +115,7 @@ main {
   order: 2;
   flex-grow: 0;
 }
+
+#social-icons > a:hover {
+  cursor: pointer;
+}
