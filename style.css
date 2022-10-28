@@ -138,8 +138,6 @@ header {
 main {
   background-color: #ffffff;
   width: 100%;
-  position: relative;
-  padding: 64px 24px;
 }
 
 ul {
@@ -152,17 +150,37 @@ ul {
 
 #works {
   display: grid;
+  grid-template-rows: .5fr repeat(3, 100%) .5fr;
   grid-template-columns: auto;
-  grid-gap: 5%;
+  grid-gap: 3%;
+  padding: 44px 24px;
+}
+
+#works-heading-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 5% 25%;
 }
 
 #works-heading {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 44px;
   line-height: 52px;
   text-align: center;
   width: 100%;
   color: var(--color-primary);
+  padding: 0 0 45px 0;
+}
+
+#indicator {
+  width: 64px;
+  height: 4px;
+  background-color: var(--color-secondary);
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .work {
@@ -190,7 +208,7 @@ ul {
 .language-tags {
   display: flex;
   list-style: none;
-  justify-content:  center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -221,4 +239,57 @@ ul {
   order: 2;
   flex-grow: 0;
   margin: 5%;
+}
+
+#about-heading-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-heading {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  width: 100%;
+  color: var(--color-primary);
+}
+
+#about {
+  color: var(--color-primary);
+  background-image: url(./media/background-home.png);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 78px 24px;
+  gap: 20px;
+  align-items: center;
+}
+
+#about-info {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#resume-link {
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: var(--color-secondary);
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 8%;
 }
