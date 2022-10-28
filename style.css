@@ -331,6 +331,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   padding: 0;
   gap: 8px;
   flex: none;
@@ -340,7 +341,6 @@ ul {
 
 .tech {
   background: #fff;
-  text-align: center;
   color: var(--color-secondary);
   border-radius: 8px;
   font-size: 15px;
