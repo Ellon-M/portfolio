@@ -136,21 +136,21 @@ header {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
 }
 
 ul {
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-inline-start: 40px;
 }
 
 #works {
   display: grid;
-  grid-template-rows: .5fr repeat(3, 100%) .5fr;
+  grid-template-rows: 0.5fr repeat(3, 100%) 0.5fr;
   grid-template-columns: auto;
   grid-gap: 3%;
   padding: 44px 24px;
@@ -184,7 +184,7 @@ ul {
 }
 
 .work {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   display: flex;
@@ -209,10 +209,9 @@ ul {
   display: flex;
   list-style: none;
   justify-content: center;
-  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   flex: none;
   order: 1;
@@ -229,7 +228,7 @@ ul {
 
 .work-link {
   border-radius: 8px;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--color-secondary);
   padding: 8px;
   font-size: 17px;
@@ -282,7 +281,7 @@ ul {
 
 #resume-link {
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--color-secondary);
   padding: 15px;
   font-size: 17px;
@@ -296,7 +295,7 @@ ul {
 
 #tech-stack {
   display: grid;
-  grid-template-rows: .5fr repeat(3, 100%) .5fr;
+  grid-template-rows: 0.5fr repeat(3, 100%) 0.5fr;
   grid-template-columns: auto;
   grid-gap: 3%;
   padding: 44px 16px;
@@ -329,11 +328,10 @@ ul {
   display: flex;
   list-style: none;
   justify-content: center;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   flex: none;
   order: 1;
@@ -341,7 +339,7 @@ ul {
 }
 
 .tech {
-  background: #ffffff;
+  background: #fff;
   text-align: center;
   color: var(--color-secondary);
   border-radius: 8px;
