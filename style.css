@@ -153,7 +153,7 @@ ul {
   grid-template-rows: 0.5fr repeat(3, 100%) 0.5fr;
   grid-template-columns: auto;
   grid-gap: 3%;
-  padding: 44px 24px;
+  padding: 45px 24px;
 }
 
 #works-heading-wrap {
@@ -298,7 +298,7 @@ ul {
   grid-template-rows: 0.5fr repeat(3, 100%) 0.5fr;
   grid-template-columns: auto;
   grid-gap: 3%;
-  padding: 44px 16px;
+  padding: 45px 16px;
 }
 
 .stack {
