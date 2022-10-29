@@ -241,18 +241,17 @@ ul {
 }
 
 .work-link:active {
-  background-color:#2d996c;
+  background-color: #2d996c;
 }
 
 .work-link:focus {
-  background-color:#2d996c;
+  background-color: #2d996c;
 }
 
 .work-link:hover {
-  box-shadow: rgba(0, 90, 0, 0.15) 0px 5px 15px;
+  box-shadow: rgba(0, 90, 0, 0.15) 0 5px 15px;
   cursor: pointer;
 }
-
 
 #about-heading-wrap {
   display: flex;
@@ -308,18 +307,17 @@ ul {
 }
 
 #resume-link:active {
-  background-color:#2d996c;
+  background-color: #2d996c;
 }
 
 #resume-link:focus {
-  background-color:#2d996c;
+  background-color: #2d996c;
 }
 
 #resume-link:hover {
-  box-shadow: rgba(0, 90, 0, 0.15) 0px 5px 15px;
+  box-shadow: rgba(0, 90, 0, 0.15) 0 5px 15px;
   cursor: pointer;
 }
-
 
 #tech-stack {
   display: grid;
