@@ -506,3 +506,11 @@ footer > h4 {
   font-weight: 400;
   flex: none;
 }
+
+.contact-bar {
+  text-align: center;
+}
+.end-line {
+  margin-top: 30px;
+  margin-bottom: 2px;
+}
