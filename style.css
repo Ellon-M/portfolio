@@ -253,7 +253,7 @@ li {
 }
 
 .work-link:hover {
-  box-shadow: rgba(0, 90, 0, 0.15) 0 5px 15px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
 
@@ -319,7 +319,7 @@ li {
 }
 
 #resume-link:hover {
-  box-shadow: rgba(0, 90, 0, 0.15) 0 5px 15px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
 
@@ -381,6 +381,9 @@ li {
 input,
 textarea {
   font-family: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 form {
@@ -426,7 +429,6 @@ form {
   font-weight: 400;
   font-size: 15px;
   height: 48px;
-  padding: 10px;
   left: 0;
   right: 0;
   top: calc(50% - 48px / 2);
@@ -474,8 +476,16 @@ textarea {
 }
 
 #form-button:hover {
-  box-shadow: rgba(0, 90, 0, 0.15) 0 5px 15px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
+}
+
+#form-button:active {
+  background-color: #2d996c;
+}
+
+#form-button:focus {
+  background-color: #2d996c;
 }
 
 footer {
