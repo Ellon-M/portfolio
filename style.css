@@ -33,6 +33,13 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./media/background-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 120px;
 }
 
 #nav {
@@ -40,6 +47,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  width: 100%;
+}
+
+#nav-links {
+  display: none;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 #logo-placeholder {
@@ -68,10 +89,40 @@ header {
   height: 40px;
 }
 
+@media only screen and (min-width: 692px) {
+  #nav {
+    justify-content: center;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 30%;
+  }
+
+  #logo-placeholder {
+    display: none;
+  }
+
+  #menu-button-wrap {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1092px) {
+  #nav-links {
+    width: 330px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
 #heading {
-  background-image: url(./media/background-home.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +142,7 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 0;
 }
 
 #main-heading > span {
@@ -135,6 +187,67 @@ header {
   flex-grow: 0;
 }
 
+@media only screen and (min-width: 592px) {
+  #supporting-text {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 792px) {
+  header {
+    background-image: url(./media/Header-llustration-desktop.png);
+    margin-bottom: 20px;
+  }
+
+  #heading {
+    padding: 100px 24px;
+    gap: 5px;
+  }
+
+  #supporting-text {
+    width: 75%;
+  }
+
+  #social-icons {
+    padding-top: 0;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 1092px) {
+  header {
+    background-image: url(./media/Header-llustration-desktop.png);
+  }
+
+  #heading {
+    padding: 94px 24px;
+    gap: 5px;
+  }
+
+  #main-heading {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  #supporting-text {
+    width: 50%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  #social-icons {
+    padding-top: 0;
+    margin-bottom: 5%;
+  }
+}
+
 main {
   background-color: #fff;
   width: 100%;
@@ -154,7 +267,6 @@ li {
 
 #works {
   display: grid;
-  grid-template-rows: 0.1fr repeat(2, 100%) 0.1fr;
   grid-template-columns: auto;
   margin: 0;
   padding: 45px 24px;
@@ -196,7 +308,6 @@ li {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  max-height: 100%;
 }
 
 .work-image {
@@ -220,7 +331,7 @@ li {
   #indicator {
     display: none;
   }
-  
+
   #works {
     grid-template-columns: auto auto;
     grid-gap: 0 2%;
@@ -263,9 +374,9 @@ li {
 .tag {
   background: #ebf0ee;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  padding: 8px;
+  padding: 6px;
 }
 
 .work-link {
@@ -293,6 +404,13 @@ li {
 .work-link:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 492px) {
+  .tag {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 
 @media only screen and (min-width: 1092px) {
@@ -458,6 +576,7 @@ li {
 @media only screen and (min-width: 1492px) {
   #about {
     padding: 60px 44px;
+    background-size: cover;
   }
 
   #about-info {
@@ -469,7 +588,6 @@ li {
 
 #tech-stack {
   display: grid;
-  grid-template-rows: 0.5fr repeat(3, 100%) 0.1fr;
   grid-template-columns: auto;
   grid-gap: 3%;
   padding: 45px 16px;
@@ -631,7 +749,8 @@ form {
   gap: 5%;
 }
 
-.form-input, .form-input-sm {
+.form-input,
+.form-input-sm {
   font-weight: 400;
   font-size: 15px;
   height: auto;
@@ -712,7 +831,7 @@ textarea {
 @media only screen and (min-width: 792px) {
   #contact-form {
     flex-direction: row;
-    padding-bottom: 6%;
+    padding-bottom: 10%;
     background-image: url('media/form-background.png');
     background-position: center;
     background-size: contain;
@@ -770,7 +889,8 @@ textarea {
     gap: 8%;
   }
 
-  .form-input > input , .form-input-lg > input {
+  .form-input > input,
+  .form-input-lg > input {
     font-size: 20px;
     line-height: 24px;
     height: auto;
@@ -788,7 +908,8 @@ textarea {
 
 @media only screen and (min-width: 1492px) {
   #contact-form {
-    padding: 64px 120px 8%;
+    padding: 104px 120px 15%;
+    background-size: cover;
   }
 }
 
