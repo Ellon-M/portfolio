@@ -310,9 +310,28 @@ li {
   margin-bottom: 50px;
 }
 
+.work-img-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.work-details-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  max-height: 100%;
+}
+
 .work-image {
   margin: 0;
   width: 100%;
+}
+
+.work-image:hover {
+  transform: scale(1.03);
+  transition: 1.2s ease-in;
 }
 
 .work-title {
@@ -606,6 +625,11 @@ li {
 .tech-image {
   margin: 0;
   padding: 45px;
+}
+
+.tech-image:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in;
 }
 
 .tech-heading {
