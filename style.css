@@ -334,11 +334,6 @@ li {
   transition: 1.2s ease-in;
 }
 
-.tech-image:hover {
-  transform: scale(1.10);
-  transition: 1s ease-in;
-}
-
 .work-title {
   margin: 0;
   font-size: 27px;
@@ -630,6 +625,11 @@ li {
 .tech-image {
   margin: 0;
   padding: 45px;
+}
+
+.tech-image:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in;
 }
 
 .tech-heading {
