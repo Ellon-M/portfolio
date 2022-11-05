@@ -334,6 +334,11 @@ li {
   transition: 1.2s ease-in;
 }
 
+.tech-image:hover {
+  transform: scale(1.10);
+  transition: 1s ease-in;
+}
+
 .work-title {
   margin: 0;
   font-size: 27px;
