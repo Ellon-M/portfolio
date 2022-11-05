@@ -595,12 +595,12 @@ li {
 
 .stack {
   background: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  border: 1px solid #c1c7d0;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8% 0 8% 0;
+  padding: 8% 4% 8% 0;
 }
 
 .tech-image {
@@ -626,7 +626,7 @@ li {
   align-items: center;
   text-align: center;
   padding: 0;
-  gap: 8px;
+  gap: 10px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -636,7 +636,8 @@ li {
   background: #fff;
   color: var(--color-secondary);
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
   padding: 10px;
 }
@@ -657,6 +658,7 @@ li {
 @media only screen and (min-width: 1092px) {
   #tech-stack {
     grid-template-columns: repeat(3, 30%);
+    grid-gap: 1.5%;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -667,7 +669,7 @@ li {
   }
 
   .tech {
-    font-size: 16px;
+    font-size: 12px;
     padding: 12px;
   }
 
@@ -683,7 +685,7 @@ li {
   }
 
   .tech {
-    font-size: 22px;
+    font-size: 14px;
     padding: 14px;
   }
 
@@ -723,7 +725,7 @@ form {
 #form-heading {
   width: 100%;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 30px;
   color: var(--color-primary);
   line-height: 52px;
   text-align: center;
