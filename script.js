@@ -43,7 +43,7 @@ openLinks.forEach((link) => {
     var index = link.getAttribute('data-index');
     console.log(index);
     popupCards[index].classList.add('open');
-    // popupCards[index].style.display = 'flex';
+    document.body.style.overflowY = "hidden";
   });
 });
 
@@ -52,7 +52,7 @@ closeLinks.forEach((link) => {
   link.addEventListener('click', () => {
     var index = link.getAttribute('data-index');
     popupCards[index].classList.remove('open');
-    // popupCards[index].style.display = 'none';
+    document.body.style.overflowY = "scroll";
   });
 });
 
