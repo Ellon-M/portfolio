@@ -1,13 +1,11 @@
 const menuWrapper = document.querySelector('.menu-button-wrap');
 const navLinks = document.querySelector('.nav-links');
 const navLink = document.querySelectorAll('.nav-link');
-const background = document.querySelector('header');
 let menuOpen = false;
 
-const openLinks =  document.querySelectorAll('.work-link');
+const openLinks = document.querySelectorAll('.work-link');
 const popupCards = document.querySelectorAll('.work-details');
 const closeLinks = document.querySelectorAll('.details-close-button');
-
 
 menuWrapper.addEventListener('click', () => {
   if (!menuOpen) {
@@ -30,7 +28,7 @@ navLink.forEach((link) => {
 });
 
 const setDataIndex = () => {
-  for (i = 0; i < popupCards.length; i++) {
+  for (let i = 0; i < popupCards.length; i += 1) {
     openLinks[i].setAttribute('data-index', i);
     popupCards[i].setAttribute('data-index', i);
     closeLinks[i].setAttribute('data-index', i);
@@ -40,22 +38,21 @@ const setDataIndex = () => {
 // open popup action
 openLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    var index = link.getAttribute('data-index');
-    console.log(index);
+    const index = link.getAttribute('data-index');
     popupCards[index].classList.add('open');
-    document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = 'hidden';
   });
 });
 
-//close popup action
+// close popup action
 closeLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    var index = link.getAttribute('data-index');
+    const index = link.getAttribute('data-index');
     popupCards[index].classList.remove('open');
-    document.body.style.overflowY = "scroll";
+    document.body.style.overflowY = 'scroll';
   });
 });
 
 window.onload = () => {
   setDataIndex();
-}
+};

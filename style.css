@@ -507,7 +507,7 @@ li {
 }
 
 .work-details-title-lg {
-  width: 55%;
+  width: 50%;
   margin: 0;
   font-size: 27px;
   line-height: 39px;
@@ -624,6 +624,7 @@ li {
 .work-details-info {
   display: flex;
   order: 1;
+  font-size: 17px;
 }
 
 .tag {
@@ -674,12 +675,28 @@ li {
   border-radius: 12px;
   color: #fff;
   background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   flex-grow: 0;
   width: 45%;
+}
+
+.details-link:active {
+  background-color: #2d996c;
+}
+
+.details-link:focus {
+  background-color: #2d996c;
+}
+
+.details-link:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
 }
 
 .details-links-lg {
@@ -687,30 +704,60 @@ li {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
-  gap: 10%;
+  width: 50%;
+  gap: 8%;
 }
 
 .details-link-lg {
   border-radius: 12px;
   color: #fff;
   background-color: var(--color-secondary);
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  font-size: 17px;
+  padding: 0.5rem;
+  font-size: 16px;
   font-weight: 500;
   flex-grow: 0;
-  width: auto;
+  width: 50%;
   height: 3rem;
+}
+
+.details-link-lg:active {
+  background-color: #2d996c;
+}
+
+.details-link-lg:focus {
+  background-color: #2d996c;
+}
+
+.details-link-lg:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
+}
+
+.details-link-icon {
+  margin-left: 12px;
 }
 
 @media only screen and (min-width: 492px) {
   .tag {
     font-size: 14px;
     padding: 8px;
+  }
+
+  .details-link-lg {
+    font-size: 14px;
+  }
+
+  .details-link-icon {
+    margin-left: 8px;
+    margin-right: 5px;
+  }
+
+  .work-details-info {
+    font-size: 21px;
+    line-height: 32px;
   }
 }
 
@@ -727,6 +774,15 @@ li {
   .work-link {
     font-size: 16px;
     padding: 12px;
+  }
+
+  .details-link-lg {
+    font-size: 15px;
+  }
+
+  .details-link-icon {
+    margin-left: 8px;
+    margin-right: 5px;
   }
 }
 
@@ -746,8 +802,11 @@ li {
   }
 
   .details-link-lg {
-    padding: 20px;
     font-size: 18px;
+  }
+
+  .details-link-icon {
+    margin-left: 10px;
   }
 }
 

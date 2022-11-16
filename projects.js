@@ -1,117 +1,129 @@
-const works = document.querySelector("#works");
+const works = document.querySelector('#works');
 
 const projects = [
   {
-    image: "./media/tonic.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/tonic.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 
   {
-    image: "./media/yoga.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/yoga.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 
   {
-    image: "./media/multipost.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/multipost.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 
   {
-    image: "./media/printing.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/printing.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 
   {
-    image: "./media/printing.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/printing.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 
   {
-    image: "./media/printing.png",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/printing.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   },
 ];
 
 const projectsInfo = [
   {
     id: 1,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavScript', 'HTML'],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 
   {
     id: 2,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
     languages: [
-      "Codekit",
-      "Github",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 
   {
     id: 3,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavScript', 'HTML'],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 
   {
     id: 4,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
     languages: [
-      "Codekit",
-      "Github",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 
   {
     id: 5,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on Rails', 'CSS', 'JavScript', 'HTML'],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 
   {
     id: 6,
-    image: "./media/5G-Security-in-an-IoT-Architecture.jpg",
-    title: "Multi-Post Stories Gain+Glory",
+    image: './media/5G-Security-in-an-IoT-Architecture.jpg',
+    title: 'Multi-Post Stories Gain+Glory',
     languages: [
-      "Codekit",
-      "Github",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'Github',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
     details:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets",
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
@@ -159,8 +171,8 @@ projectsInfo.forEach((projectInfo) => {
         ${projectInfo.details}
       </p>
       <div class="details-links">
-        <a href="#" class="details-link"> See Live </a>
-        <a href="#" class="details-link"> See Source </a>
+        <a href="#" class="details-link"> See Live <img src="https://img.icons8.com/fluency-systems-regular/24/ffffff/external-link.png" class="details-link-icon"/>  </a>
+        <a href="#" class="details-link"> See Source <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/ffffff/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" class="details-link-icon"/></a>
       </div>
      </div> 
      <div class="details-content-lg">
@@ -174,8 +186,8 @@ projectsInfo.forEach((projectInfo) => {
        <div class="details-top">
          <h3 class="work-details-title-lg">${projectInfo.title}</h3>
          <div class="details-links-lg">
-          <a href="#" class="details-link-lg"> See Live </a>
-          <a href="#" class="details-link-lg"> See Source </a>
+          <a href="${projectInfo.liveLink}" class="details-link-lg"> See Live <img src="https://img.icons8.com/fluency-systems-regular/20/ffffff/external-link.png" class="details-link-icon"/> </a>
+          <a href="${projectInfo.sourceLink}" class="details-link-lg"> See Source <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/20/ffffff/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" class="details-link-icon"/></a>
          </div>
        </div>
        <ul class="language-tags">
