@@ -22,7 +22,7 @@ const projects = [
   {
     image: "./media/printing.png",
     title: "Multi-Post Stories Gain+Glory",
-    languages: ["Ruby on Rails", "CSS", "JavScript","HTML"],
+    languages: ["Ruby on Rails", "CSS", "JavScript", "HTML"],
   },
 
   {
@@ -139,8 +139,8 @@ projects.forEach((project) => {
 projectsInfo.forEach((projectInfo) => {
   works.innerHTML += `
     <article class="work-details">
-     <div class='details-content'>
-     <span class="details-close-button"><img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png" alt="work details image"/></span>
+    <span class="details-close-button"><img src="https://img.icons8.com/material-outlined/24/ffffff/delete-sign.png" alt="work details image"/></span>
+     <div class='details-content-sm'>
       <div class="work-details-img-wrap">
         <img
           src="${projectInfo.image}"
@@ -163,6 +163,31 @@ projectsInfo.forEach((projectInfo) => {
         <a href="#" class="details-link"> See Source </a>
       </div>
      </div> 
+     <div class="details-content-lg">
+       <div class="work-details-img-wrap">
+         <img
+           src="${projectInfo.image}"
+           alt="first project screenshot"
+           class="work-details-image"
+         />
+       </div>
+       <div class="details-top">
+         <h3 class="work-details-title-lg">${projectInfo.title}</h3>
+         <div class="details-links-lg">
+          <a href="#" class="details-link-lg"> See Live </a>
+          <a href="#" class="details-link-lg"> See Source </a>
+         </div>
+       </div>
+       <ul class="language-tags">
+        <li class="tag">${projectInfo.languages[0]}</li>
+        <li class="tag">${projectInfo.languages[1]}</li>
+        <li class="tag">${projectInfo.languages[2]}</li>
+        <li class="tag">${projectInfo.languages[3]}</li>
+      </ul>
+      <p class="work-details-info">
+        ${projectInfo.details}
+      </p>
+      </div>
     </article>
     `;
 });
