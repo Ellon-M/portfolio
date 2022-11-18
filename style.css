@@ -1114,15 +1114,16 @@ form {
 }
 
 #form-details-lg {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
   padding: 0;
-  gap: 5%;
+  gap: 2%;
 }
 
-.form-input,
-.form-input-sm {
+.form-input {
   font-weight: 400;
   font-size: 15px;
   height: auto;
@@ -1134,6 +1135,15 @@ form {
   border-radius: 4px;
   width: 95%;
   margin-bottom: 1rem;
+}
+
+.form-input-name {
+  width: 95%;
+  margin-bottom: 1rem;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: calc(50% - 48px / 2);
 }
 
 .form-input-lg {
@@ -1200,6 +1210,14 @@ textarea {
   background-color: #2d996c;
 }
 
+#error-message {
+  display: none;
+  color: #f76565;
+  font-size: 15px;
+  margin: 0% 0 0 2%;
+  padding: 20px 0 20px 0;
+}
+
 @media only screen and (min-width: 792px) {
   #contact-form {
     flex-direction: row;
@@ -1215,15 +1233,13 @@ textarea {
     height: auto;
   }
 
-  .form-input-sm {
-    display: none;
-  }
-
   #form-details-lg {
+    margin-top: 3rem;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   form {
@@ -1276,12 +1292,20 @@ textarea {
     margin-left: 2.5%;
     font-size: 16px;
   }
+
+  #error-message {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 1492px) {
   #contact-form {
     padding: 104px 120px 15%;
     background-size: cover;
+  }
+
+  #error-message {
+    font-size: 20px;
   }
 }
 
