@@ -8,6 +8,18 @@ const popupCards = document.querySelectorAll('.work-details');
 const closeLinks = document.querySelectorAll('.details-close-button');
 
 const formSubmit = document.querySelector('#form-button');
+const formSubmit = document.querySelector('#form-button');
+
+const mail = document.querySelector('#email');
+
+const errorMsg = document.querySelector('#error-message');
+
+const formData = {
+  firstName: document.getElementById('first-name'),
+  lastName: document.getElementById('last-name'),
+  email: document.getElementById('email'),
+  message: document.getElementById('message'),
+};
 
 const mail = document.querySelector('#email');
 
@@ -68,6 +80,19 @@ formSubmit.addEventListener('click', (e) => {
     errorMsg.style.display = 'flex';
     e.preventDefault();
   }
+});
+formSubmit.addEventListener('click', (e) => {
+  const val = validateInput(mail.value);
+  if (!val) {
+    errorMsg.style.display = 'flex';
+    e.preventDefault();
+  }
+});
+
+const inputs = Object.values(formData);
+
+inputs.forEach((input) => {
+  inputPersist(input);
 });
 
 window.onload = () => {
