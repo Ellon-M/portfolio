@@ -1211,6 +1211,7 @@ textarea {
 }
 
 #error-message {
+  display: none;
   color: #f76565;
   font-size: 15px;
   margin: 0% 0 0 2%;

@@ -7,11 +7,18 @@ const openLinks = document.querySelectorAll('.work-link');
 const popupCards = document.querySelectorAll('.work-details');
 const closeLinks = document.querySelectorAll('.details-close-button');
 
-// const formSubmit = document.querySelector('#form-button');
+const formSubmit = document.querySelector('#form-button');
 
-// const mail = document.querySelector('#email');
+const mail = document.querySelector('#email');
 
-// const errorMsg = document.querySelector('#error-message');
+const errorMsg = document.querySelector('#error-message');
+
+const formData = {
+  firstName: document.getElementById('first-name'),
+  lastName: document.getElementById('last-name'),
+  email: document.getElementById('email'),
+  message: document.getElementById('message'),
+}
 
 const setDataIndex = () => {
   for (let i = 0; i < popupCards.length; i += 1) {
@@ -19,7 +26,7 @@ const setDataIndex = () => {
     popupCards[i].setAttribute('data-index', i);
     closeLinks[i].setAttribute('data-index', i);
   }
-};
+}
 
 const validateInput = (email) => email.toLowerCase() === email;
 
@@ -63,6 +70,8 @@ closeLinks.forEach((link) => {
 
 // form submission validation
 
+const inputs = Object.values(formData);
+
 window.onload = () => {
   setDataIndex();
-};
+}
