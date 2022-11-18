@@ -70,7 +70,13 @@ closeLinks.forEach((link) => {
 
 // form submission validation
 
-const inputs = Object.values(formData);
+formSubmit.addEventListener("click", (e) => {
+  var val = validateInput(mail.value);
+  if (!val) {
+    errorMsg.style.display = "flex";
+    e.preventDefault();
+  }
+});
 
 window.onload = () => {
   setDataIndex();
