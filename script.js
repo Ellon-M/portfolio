@@ -8,7 +8,6 @@ const popupCards = document.querySelectorAll('.work-details');
 const closeLinks = document.querySelectorAll('.details-close-button');
 
 const formSubmit = document.querySelector('#form-button');
-const formSubmit = document.querySelector('#form-button');
 
 const mail = document.querySelector('#email');
 
@@ -20,10 +19,6 @@ const formData = {
   email: document.getElementById('email'),
   message: document.getElementById('message'),
 };
-
-const mail = document.querySelector('#email');
-
-const errorMsg = document.querySelector('#error-message');
 
 const setDataIndex = () => {
   for (let i = 0; i < popupCards.length; i += 1) {
