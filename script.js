@@ -13,20 +13,13 @@ const mail = document.querySelector('#email');
 
 const errorMsg = document.querySelector('#error-message');
 
-const formData = {
-  firstName: document.getElementById('first-name'),
-  lastName: document.getElementById('last-name'),
-  email: document.getElementById('email'),
-  message: document.getElementById('message'),
-}
-
 const setDataIndex = () => {
   for (let i = 0; i < popupCards.length; i += 1) {
     openLinks[i].setAttribute('data-index', i);
     popupCards[i].setAttribute('data-index', i);
     closeLinks[i].setAttribute('data-index', i);
   }
-}
+};
 
 const validateInput = (email) => email.toLowerCase() === email;
 
@@ -69,15 +62,14 @@ closeLinks.forEach((link) => {
 });
 
 // form submission validation
-
-formSubmit.addEventListener("click", (e) => {
-  var val = validateInput(mail.value);
+formSubmit.addEventListener('click', (e) => {
+  const val = validateInput(mail.value);
   if (!val) {
-    errorMsg.style.display = "flex";
+    errorMsg.style.display = 'flex';
     e.preventDefault();
   }
 });
 
 window.onload = () => {
   setDataIndex();
-}
+};
