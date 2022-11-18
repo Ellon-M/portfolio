@@ -62,7 +62,7 @@ closeLinks.forEach((link) => {
 });
 
 // form submission validation
-formSubmit.addEventListener('click', (e) => {
+formSubmit.addEventListener('submit', (e) => {
   const val = validateInput(mail.value);
   if (!val) {
     errorMsg.style.display = 'flex';
