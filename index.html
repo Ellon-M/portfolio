@@ -89,9 +89,7 @@
         <h1 id="works-heading">My Recent Works</h1>
         <div id="indicator"></div>
       </div>
-      <section id="works">
-        
-      </section>
+      <section id="works"></section>
       <section id="about">
         <div id="about-heading-wrap">
           <h1 id="about-heading">About me</h1>
@@ -142,14 +140,18 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h3>
-        <form action="https://formspree.io/f/xyyvbjao" method="post">
+        <form
+          action="https://formspree.io/f/xdojbrnk"
+          method="POST"
+        >
           <ul id="form-details">
-            <li>
+            <li class="form-input-name">
               <ul id="form-details-lg">
                 <li class="form-input-lg">
                   <input
                     type="text"
                     id="first-name"
+                    name="firstname"
                     placeholder="First name"
                     maxlength="30"
                     required
@@ -159,21 +161,13 @@
                   <input
                     type="text"
                     id="last-name"
+                    name="lastname"
                     placeholder="Last name"
                     maxlength="30"
                     required
                   />
                 </li>
               </ul>
-            </li>
-            <li class="form-input-sm">
-              <input
-                type="text"
-                id="name"
-                placeholder="Full name"
-                maxlength="30"
-                required
-              />
             </li>
             <li class="form-input">
               <input
@@ -194,7 +188,12 @@
               ></textarea>
             </li>
           </ul>
-          <input type="submit" id="form-button" value="Get in touch" />
+          <p id="error-message">
+            Form not submitted. Email field should be in lowercase
+          </p>
+          <button id="form-button" type="submit" name="submit">
+            Get in touch
+          </button>
         </form>
       </section>
       <footer id="footer">

@@ -7,6 +7,22 @@ const openLinks = document.querySelectorAll('.work-link');
 const popupCards = document.querySelectorAll('.work-details');
 const closeLinks = document.querySelectorAll('.details-close-button');
 
+// const formSubmit = document.querySelector('#form-button');
+
+// const mail = document.querySelector('#email');
+
+// const errorMsg = document.querySelector('#error-message');
+
+const setDataIndex = () => {
+  for (let i = 0; i < popupCards.length; i += 1) {
+    openLinks[i].setAttribute('data-index', i);
+    popupCards[i].setAttribute('data-index', i);
+    closeLinks[i].setAttribute('data-index', i);
+  }
+};
+
+const validateInput = (email) => email.toLowerCase() === email;
+
 menuWrapper.addEventListener('click', () => {
   if (!menuOpen) {
     menuWrapper.classList.add('open');
@@ -27,14 +43,6 @@ navLink.forEach((link) => {
   });
 });
 
-const setDataIndex = () => {
-  for (let i = 0; i < popupCards.length; i += 1) {
-    openLinks[i].setAttribute('data-index', i);
-    popupCards[i].setAttribute('data-index', i);
-    closeLinks[i].setAttribute('data-index', i);
-  }
-};
-
 // open popup action
 openLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -52,6 +60,8 @@ closeLinks.forEach((link) => {
     document.body.style.overflowY = 'scroll';
   });
 });
+
+// form submission validation
 
 window.onload = () => {
   setDataIndex();
